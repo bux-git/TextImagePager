@@ -1,0 +1,20 @@
+<!--
+  ~ Copyright (c) 2015.
+  ~ 湖南球谱科技有限公司版权所有
+  ~ Hunan Qiupu Technology Co., Ltd. all rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tols"
+      tools:ignore="MissingPrefix">
+    <item
+        android:id="@+id/action_save"
+        android:title="@string/text_image_pager_save"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/text_image_pager_send_friend"
+        app:showAsAction="never" />
+
+</menu>

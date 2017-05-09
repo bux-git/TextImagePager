@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextImagePager</string>
+    <string name="text_image_pager_save">保存</string>
+    <string name="text_image_pager_send_friend">发送给朋友</string>
+</resources>
