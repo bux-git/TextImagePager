@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
             public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.recycler_list_item, parent, false);
                 ImageView imageView = (ImageView) view.findViewById(R.id.iv_iamge);
-                imageView.getLayoutParams().width=smallImgWidth;
-                imageView.getLayoutParams().height=smallImgWidth;
+                imageView.getLayoutParams().width = smallImgWidth;
+                imageView.getLayoutParams().height = smallImgWidth;
                 return new HolderView(view);
             }
 
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getData() {
-        String smallImgFlag = "?imageView/0/w/"+smallImgWidth+"/h/"+smallImgWidth;
+        String smallImgFlag = "?imageView/0/w/" + smallImgWidth + "/h/" + smallImgWidth;
         mList = new ArrayList<>();
 
         String desc = "";
@@ -119,8 +119,8 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 desc = desc3;
             }
-            Log.d(TAG, "getData: "+images[i]  + smallImgFlag);
-            ImagePagerBean imagePagerBean = new ImagePagerBean(images[i], desc, images[i]+ smallImgFlag);
+            Log.d(TAG, "getData: " + images[i] + smallImgFlag);
+            ImagePagerBean imagePagerBean = new ImagePagerBean(images[i], desc, images[i] + smallImgFlag);
             mList.add(imagePagerBean);
         }
 
