@@ -154,6 +154,7 @@ public class ImageViewPager extends AppCompatActivity {
             case R.id.action_share:
                 doShare();
                 break;
+                default:
         }
         return super.onOptionsItemSelected(item);
     }

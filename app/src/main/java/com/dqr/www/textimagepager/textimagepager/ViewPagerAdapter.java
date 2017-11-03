@@ -77,12 +77,13 @@ public class ViewPagerAdapter extends PagerAdapter {
         DrawableRequestBuilder<String> thumbnailRequest = Glide
                 .with(view.getContext())
                 .load(bean.getSmallUrl())
-                .thumbnail(0.1f);//加载缩略图;
+                .crossFade();//加载缩略图;
 
         Glide.with(view.getContext())
                 .load(bean.getUrl())
-                .thumbnail(0.1f)//加载缩略图
+                .thumbnail(thumbnailRequest)//加载缩略图
                 .fitCenter()
+                .crossFade()
                 .error(R.mipmap.ic_launcher)
                 .into(photoView);
 
